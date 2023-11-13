@@ -15,6 +15,7 @@ public class MainTest
     @Test
     public void shouldAnswerWithTrue()
     {
+        // pruebas convenientes a la iteracion 1
         assertTrue( true );
     }
 }
