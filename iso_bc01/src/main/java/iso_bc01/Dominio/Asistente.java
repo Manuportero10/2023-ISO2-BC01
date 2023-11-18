@@ -8,21 +8,16 @@ public class Asistente extends Usuario {
 	private int telfAsistente;
 	private String correo;
 	private String direccion;
-	private String contrasenia;
+	private String contrasena;
 	private String usuario;
 	private String fechaNac;
 
 	/**
 	 * 
 	 * @param usuario
-	 * @param contrasenia
+	 * @param contrase�a
 	 */
-	// Constructor
-	public Asistente(String usuario, String contrasenia) {
-		
-	}
-
-	public void login(String usuario, String contrasenia) {
+	public void login(String usuario, String contrasena) {
 		// TODO - implement Asistente.login
 		throw new UnsupportedOperationException();
 	}

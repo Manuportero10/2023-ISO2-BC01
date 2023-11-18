@@ -6,15 +6,15 @@ public class Personal extends Usuario {
 	private int ID_Personal;
 	private String correo;
 	private String sedeTrabajo;
-	private String contrasenia;
+	private String contrasena;
 	private String usuario;
 
 	/**
 	 * 
 	 * @param usuario
-	 * @param contrasenia
+	 * @param contrase�a
 	 */
-	public void login(String usuario, String contrasenia) {
+	public void login(String usuario, String contrasena) {
 		// TODO - implement Personal.login
 		throw new UnsupportedOperationException();
 	}
