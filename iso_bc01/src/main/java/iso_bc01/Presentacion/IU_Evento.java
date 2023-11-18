@@ -1,4 +1,4 @@
-package Diagrama_de_clases.Presentacion;
+package iso_bc01.Presentacion;
 
 public class IU_Evento {
 
@@ -9,8 +9,8 @@ public class IU_Evento {
 	 * @param descripcion
 	 * @param particpantes
 	 */
-	public void añadirEvento(Date fecha, String nombre, String descripcion, int particpantes) {
-		// TODO - implement IU_Evento.añadirEvento
+	public void anadirEvento(String fecha, String nombre, String descripcion, int particpantes) {
+		// TODO - implement IU_Evento.aï¿½adirEvento
 		throw new UnsupportedOperationException();
 	}
 

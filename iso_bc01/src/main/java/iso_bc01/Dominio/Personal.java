@@ -1,4 +1,4 @@
-package Diagrama_de_clases.Dominio;
+package iso_bc01.Dominio;
 
 public class Personal extends Usuario {
 
@@ -6,15 +6,15 @@ public class Personal extends Usuario {
 	private int ID_Personal;
 	private String correo;
 	private String sedeTrabajo;
-	private String contraseña;
-	private string usuario;
+	private String contrasena;
+	private String usuario;
 
 	/**
 	 * 
 	 * @param usuario
-	 * @param contraseña
+	 * @param contraseï¿½a
 	 */
-	public void login(String usuario, String contraseña) {
+	public void login(String usuario, String contrasena) {
 		// TODO - implement Personal.login
 		throw new UnsupportedOperationException();
 	}

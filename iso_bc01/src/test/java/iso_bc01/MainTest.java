@@ -18,4 +18,11 @@ public class MainTest
         // pruebas convenientes a la iteracion 1
         assertTrue( true );
     }
+
+    @Test
+    public void shouldAnswerWithTrue2()
+    {
+        // pruebas convenientes a la iteracion 2
+        assertTrue( true );
+    }
 }

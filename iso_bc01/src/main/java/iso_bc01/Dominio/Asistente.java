@@ -1,4 +1,4 @@
-package Diagrama_de_clases.Dominio;
+package iso_bc01.Dominio;
 
 public class Asistente extends Usuario {
 
@@ -8,16 +8,16 @@ public class Asistente extends Usuario {
 	private int telfAsistente;
 	private String correo;
 	private String direccion;
-	private String contraseña;
+	private String contrasena;
 	private String usuario;
-	private Date fechaNac;
+	private String fechaNac;
 
 	/**
 	 * 
 	 * @param usuario
-	 * @param contraseña
+	 * @param contraseï¿½a
 	 */
-	public void login(String usuario, String contraseña) {
+	public void login(String usuario, String contrasena) {
 		// TODO - implement Asistente.login
 		throw new UnsupportedOperationException();
 	}

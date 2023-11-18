@@ -1,4 +1,4 @@
-package Diagrama_de_clases.Dominio;
+package iso_bc01.Dominio;
 
 public class controlEvento {
 
@@ -9,8 +9,8 @@ public class controlEvento {
 	 * @param descripcion
 	 * @param participantes
 	 */
-	public int añadirEvento(Date fechs, String nombre, String descripcion, Asistente[] participantes) {
-		// TODO - implement controlEvento.añadirEvento
+	public int anadirEvento(String fechs, String nombre, String descripcion, Asistente[] participantes) {
+		// TODO - implement controlEvento.aï¿½adirEvento
 		throw new UnsupportedOperationException();
 	}
 
