@@ -14,6 +14,7 @@ public class Main
         registrarse();
 
         implementacion_iteracion2();
+	implementacion_iteracion3();
 
 
     }
@@ -39,6 +40,14 @@ public class Main
         System.out.println("Evento editado con éxito");
         interfaz_eventos.mostrarInfo();
         System.out.println("Información mostrada con éxito");
+    }
+
+    public static void implementacion_iteracion3() {
+	evento =interfaz_eventos.añadirEvento("22/11/23","Examen","Examen de ISO II",10);
+	evento_abierto = interfaz_eventos.click_abrir_evento(evento);
+	if (evento_abierto== true) {
+		interfaz_eventos.click_cerrar_evento(evento);
+	}
     }
 
 

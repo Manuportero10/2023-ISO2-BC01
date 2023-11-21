@@ -1,12 +1,13 @@
-package iso_bc01.Dominio;
+package Diagrama_de_clases.Dominio;
 
 public class Evento {
 
 	private int id;
-	private String fecha;
+	private Date fecha;
 	private String nombre;
 	private String descripcion;
 	private Asistente[] asistentes;
+	private boolean abierto;
 
 	/**
 	 * 
@@ -16,7 +17,7 @@ public class Evento {
 	 * @param descripcion
 	 * @param asistentes
 	 */
-	public Evento(int id, String fecha, String nombre, String descripcion, Asistente[] asistentes) {
+	public Evento(int id, Date fecha, String nombre, String descripcion, Asistente[] asistentes) {
 		// TODO - implement Evento.Evento
 		throw new UnsupportedOperationException();
 	}
@@ -26,7 +27,7 @@ public class Evento {
 		throw new UnsupportedOperationException();
 	}
 
-	public String getFecha() {
+	public date getFecha() {
 		// TODO - implement Evento.getFecha
 		throw new UnsupportedOperationException();
 	}
@@ -53,7 +54,7 @@ public class Evento {
 	 * 
 	 * @param fecha
 	 */
-	public void setFecha(String fecha) {
+	public void setFecha(Date fecha) {
 		this.fecha = fecha;
 	}
 
@@ -71,6 +72,16 @@ public class Evento {
 	 */
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
+	}
+
+	public boolean abrirEvento() {
+		// TODO - implement Evento.abrirEvento
+		throw new UnsupportedOperationException();
+	}
+
+	public boolean cerrarEvento() {
+		// TODO - implement Evento.cerrarEvento
+		throw new UnsupportedOperationException();
 	}
 
 }
