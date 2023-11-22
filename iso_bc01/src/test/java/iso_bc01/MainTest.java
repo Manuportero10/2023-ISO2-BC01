@@ -25,4 +25,10 @@ public class MainTest
         // pruebas convenientes a la iteracion 2
         assertTrue( true );
     }
+    
+    public void shouldAnswerWithTrue3()
+    {
+        // pruebas convenientes a la iteracion 3
+        assertTrue( true );
+    }
 }
