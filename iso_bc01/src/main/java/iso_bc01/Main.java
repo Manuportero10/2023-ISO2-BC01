@@ -1,6 +1,7 @@
 package iso_bc01;
 import iso_bc01.Presentacion.*;
 import iso_bc01.Dominio.*;
+import java.util.*;
 
 /**
  * Hello world!
@@ -10,11 +11,22 @@ public class Main
 {
     public static void main( String[] args )
     {
+        //implementacion_iteracion1();
         System.out.println( "Bienvenido a nuestra aplicación: " );
         registrarse();
 
+        //implementacion_iteracion2();
         implementacion_iteracion2();
-	implementacion_iteracion3();
+
+        //implementacion_iteracion3();
+	    implementacion_iteracion3();
+
+        //implementacion_iteracion4();
+        List<Evento> lista_Eventos = implementacion_iteracion4();
+        if(lista_Eventos.isEmpty()) //Aplicamos control de Errores (gestión de calidad) 
+            System.out.println("No hay eventos");   
+
+
 
 
     }
@@ -43,11 +55,41 @@ public class Main
     }
 
     public static void implementacion_iteracion3() {
-	evento =interfaz_eventos.añadirEvento("22/11/23","Examen","Examen de ISO II",10);
-	evento_abierto = interfaz_eventos.click_abrir_evento(evento);
-	if (evento_abierto== true) {
-		interfaz_eventos.click_cerrar_evento(evento);
-	}
+        IU_Evento interfaz_eventos = new IU_Evento();
+       Evento evento = new Evento(0, null, null, null, null);
+        interfaz_eventos.anadirEvento("12/12/2020","Fiesta de cumpleaños","Fiesta de cumpleaños de Juan", 20);
+        interfaz_eventos.click_abrir_evento(evento);
+
+        if (evento.abrirEvento() == true) {
+            System.out.println("Evento abierto con éxito");
+        } else {
+            System.out.println("No se ha podido abrir el evento");
+        }
+
+        //si queremos cerrar el evento
+        interfaz_eventos.click_cerrar_evento(evento);
+        if (evento.cerrarEvento() == true) {
+            System.out.println("Evento cerrado con éxito");
+        } else {
+            System.out.println("No se ha podido cerrar el evento");
+            
+        }
+    }
+
+    public static List<Evento> implementacion_iteracion4() {
+        IU_Evento interfaz_eventos = new IU_Evento();
+
+        Evento evento = new Evento(0, null, null, null, null);
+        interfaz_eventos.anadirEvento("12/12/2020","Fiesta de cumpleaños","Fiesta de cumpleaños de Juan", 20);
+        interfaz_eventos.click_abrir_evento(evento);
+
+        interfaz_eventos.click_consultar_eventos(evento);
+        List<Evento> lista_Eventos = new ArrayList<Evento>();
+        controlEvento control = new controlEvento();
+        lista_Eventos = control.consulta_eventos(evento);
+
+        interfaz_eventos.mostrarEvento(lista_Eventos);
+        return lista_Eventos; 
     }
 
 
