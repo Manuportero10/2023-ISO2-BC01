@@ -1,4 +1,5 @@
 package iso_bc01.Dominio;
+import java.util.*;
 
 public class controlEvento {
 
@@ -10,7 +11,7 @@ public class controlEvento {
 	 * @param participantes
 	 */
 	public int anadirEvento(String fechs, String nombre, String descripcion, Asistente[] participantes) {
-		// TODO - implement controlEvento.a�adirEvento
+		// TODO - implement controlEvento.añadirEvento
 		throw new UnsupportedOperationException();
 	}
 
@@ -30,6 +31,33 @@ public class controlEvento {
 
 	public int mostrarInformacion() {
 		// TODO - implement controlEvento.mostrarInformacion
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param e
+	 */
+	public boolean abrir_evento(Evento e) {
+		// TODO - implement controlEvento.abrir_evento
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param e
+	 */
+	public boolean cerrar_evento(Evento e) {
+		// TODO - implement controlEvento.cerrar_evento
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param e
+	 */
+	public List<Evento> consulta_eventos(Evento e) {
+		// TODO - implement controlEvento.consulta_eventos
 		throw new UnsupportedOperationException();
 	}
 
