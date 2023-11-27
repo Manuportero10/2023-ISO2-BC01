@@ -92,7 +92,7 @@ public class Main
         return lista_Eventos; 
     }
 
-    public static boolean implementacion_iteracion5() {
+    public static void implementacion_iteracion5() {
         IU_Evento interfaz_eventos = new IU_Evento();
  
         Evento evento = new Evento(0, null, null, null, null);
