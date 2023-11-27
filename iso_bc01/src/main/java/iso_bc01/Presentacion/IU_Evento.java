@@ -1,6 +1,7 @@
 package iso_bc01.Presentacion;
 
-import Diagrama_de_clases.Dominio.*;
+import iso_bc01.Dominio.*;
+import java.util.*;
 
 public class IU_Evento {
 
@@ -11,7 +12,7 @@ public class IU_Evento {
 	 * @param descripcion
 	 * @param particpantes
 	 */
-	public void anadirEvento(Date fecha, String nombre, String descripcion, int particpantes) {
+	public void anadirEvento(String fecha, String nombre, String descripcion, int particpantes) {
 		// TODO - implement IU_Evento.anadirEvento
 		throw new UnsupportedOperationException();
 	}
@@ -94,7 +95,7 @@ public class IU_Evento {
 	 * @param evento
 	 * @param asistente
 	 */
-	public void RegistrarseEvento(Evento evento, Asistente asistente) {
+	public boolean RegistrarseEvento(Evento evento, Asistente asistente) {
 		// TODO - implement IU_Evento.RegistrarseEvento
 		throw new UnsupportedOperationException();
 	}

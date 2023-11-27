@@ -1,4 +1,5 @@
 package iso_bc01.Presentacion;
+import iso_bc01.Dominio.*;
 
 public class IU_Registrarse {
 
@@ -8,7 +9,7 @@ public class IU_Registrarse {
 	 * @param correo
 	 * @param direccion
 	 */
-	public Asistente RegistrarseComoAsistente(usuario u, String correo, String direccion) {
+	public Asistente RegistrarseComoAsistente(Usuario u, String correo, String direccion) {
 		// TODO - implement IU_Registrarse.RegistrarseComoAsistente
 		throw new UnsupportedOperationException();
 	}
@@ -19,7 +20,7 @@ public class IU_Registrarse {
 	 * @param correo
 	 * @param sedeTrabajo
 	 */
-	public Personal RegistrarseComoPersonalDeAyD(usuario u, String correo, String sedeTrabajo) {
+	public Personal RegistrarseComoPersonalDeAyD(Usuario u, String correo, String sedeTrabajo) {
 		// TODO - implement IU_Registrarse.RegistrarseComoPersonalDeAyD
 		throw new UnsupportedOperationException();
 	}
@@ -28,7 +29,7 @@ public class IU_Registrarse {
 	 * 
 	 * @param u
 	 */
-	public Organidador RegistraeseComoOrganizadorDeEventos(usuario u) {
+	public Organizador RegistraeseComoOrganizadorDeEventos(Usuario u) {
 		// TODO - implement IU_Registrarse.RegistraeseComoOrganizadorDeEventos
 		throw new UnsupportedOperationException();
 	}

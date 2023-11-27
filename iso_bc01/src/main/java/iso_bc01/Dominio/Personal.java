@@ -7,7 +7,7 @@ public class Personal extends Usuario {
 	private String correo;
 	private String sedeTrabajo;
 	private String contrasena;
-	private string usuario;
+	private String usuario;
 
 	/**
 	 * 
