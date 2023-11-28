@@ -10,7 +10,7 @@ public class ControlUsuario {
 	 * @param fechaNac
 	 * @param telf
 	 */
-	public usuario crear(String nombre, String apellido, String DNI, Date fechaNac, int telf) {
+	public Usuario crear(String nombre, String apellido, String DNI, String fechaNac, int telf) {
 		// TODO - implement ControlUsuario.crear
 		throw new UnsupportedOperationException();
 	}

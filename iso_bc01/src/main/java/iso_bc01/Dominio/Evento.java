@@ -17,7 +17,7 @@ public class Evento {
 	 * @param descripcion
 	 * @param asistentes
 	 */
-	public Evento(int id, Date fecha, String nombre, String descripcion, Asistente[] asistentes) {
+	public Evento(int id, String fecha, String nombre, String descripcion, Asistente[] asistentes) {
 		// TODO - implement Evento.Evento
 		throw new UnsupportedOperationException();
 	}
@@ -27,7 +27,7 @@ public class Evento {
 		throw new UnsupportedOperationException();
 	}
 
-	public date getFecha() {
+	public String getFecha() {
 		// TODO - implement Evento.getFecha
 		throw new UnsupportedOperationException();
 	}

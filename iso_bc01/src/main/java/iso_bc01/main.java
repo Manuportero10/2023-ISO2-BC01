@@ -3,10 +3,7 @@ import iso_bc01.Presentacion.*;
 import iso_bc01.Dominio.*;
 import java.util.*;
 
-/**
- * Hello world!
- *
- */
+
 public class Main 
 {
     public static void main( String[] args )
@@ -26,14 +23,16 @@ public class Main
         if(lista_Eventos.isEmpty()) //Aplicamos control de Errores (gestión de calidad) 
             System.out.println("No hay eventos");   
 
-
+        //implementacion_iteracion5();
+        implementacion_iteracion5();
 
 
     }
 
     public static void registrarse(){
+        Usuario usuario = new Usuario();
          IU_Registrarse login = new IU_Registrarse();
-         Usuario user = login.Registrarse("Juan","Juanito13@gmail.com","12345abc","Calle de la piruleta 13");
+         Usuario user = login.RegistrarseComoAsistente(usuario,"Juanito13@gmail.com","calle de la piruleta 13");
          System.out.println("Usuario registrado con éxito");  
     }
 
@@ -96,14 +95,13 @@ public class Main
         IU_Evento interfaz_eventos = new IU_Evento();
  
         Evento evento = new Evento(0, null, null, null, null);
-        Asistente asistente = new Asistente(null,null,null,0,null,null,null,null,1);
-        boolean valido = interfaz_eventos.registrarseEvento(evento,asistente);
+        Asistente asistente = new Asistente(); //Creamos al asistente con los datos necesarios
+        boolean valido = interfaz_eventos.RegistrarseEvento(evento,asistente);
      
-        if (valido == true) {
-            System.out.println("Registrado");
+        if (valido == true) { //control de errores
+            interfaz_eventos.MostrarMensaje("Registrado");
         } else {
-            System.out.println("No registrado");
-            
+            interfaz_eventos.MostrarMensajeError("No registrado - Error");  
         }
         
     }

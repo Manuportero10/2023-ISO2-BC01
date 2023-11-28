@@ -1,4 +1,5 @@
 package iso_bc01.Dominio;
+import java.util.*;
 
 public class controlEvento {
 
@@ -9,7 +10,7 @@ public class controlEvento {
 	 * @param descripcion
 	 * @param participantes
 	 */
-	public int anadirEvento(Date fechs, String nombre, String descripcion, Asistente[] participantes) {
+	public int anadirEvento(String fechs, String nombre, String descripcion, Asistente[] participantes) {
 		// TODO - implement controlEvento.anadirEvento
 		throw new UnsupportedOperationException();
 	}
