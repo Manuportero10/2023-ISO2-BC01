@@ -26,6 +26,9 @@ public class Main
         //implementacion_iteracion5();
         implementacion_iteracion5();
 
+	//implementacion iteracion 6
+	implementacion_iteracion6();
+
 
     }
 
@@ -105,6 +108,30 @@ public class Main
         }
         
     }
+
+    public static void implementacion_iteracion6(){
+	Alumno alumno = new Alumno();
+    	IU_AsignarAlumno I_alumno = new IU_AsignarAlumno("a345","1235");
+	boolean esValido = controlAsignar.comprobar_alumno("a354");
+	if (esValido) {
+		controlAsignar.asignar_evento_a_alumno("a345","1235");
+	}
+	else {
+		System.out.println("Alumno no valido");
+	}
+	Profesor profesor = new Profesor();
+	IU_AsignarProfesor I_prof = new IU_AsignarProfesor("p456","1235");
+	esValido = controlAsignar.comprobar_profesor("p456");
+	if (esValido) {
+		controlAsignar.asignar_evento_a_profesor("p456","1235");
+	}
+	else {
+		System.out.println("Profesor no valido");
+	}
+
+
+    }
+
 
 
 }
