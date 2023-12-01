@@ -71,4 +71,15 @@ public class controlEvento {
 		throw new UnsupportedOperationException();
 	}
 
+
+	/**
+	 * 
+	 * @param e
+	 * @param a
+	 */
+	public String generar_certificado(Evento e, Asistente a) {
+		// TODO - implement controlEvento.generar_certificado
+		throw new UnsupportedOperationException();
+	}
+
 }

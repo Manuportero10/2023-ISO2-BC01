@@ -1,5 +1,4 @@
 package iso_bc01.Presentacion;
-
 import iso_bc01.Dominio.*;
 import java.util.*;
 
@@ -13,7 +12,7 @@ public class IU_Evento {
 	 * @param particpantes
 	 */
 	public void anadirEvento(String fecha, String nombre, String descripcion, int particpantes) {
-		// TODO - implement IU_Evento.anadirEvento
+		// TODO - implement IU_Evento.a�adirEvento
 		throw new UnsupportedOperationException();
 	}
 
@@ -95,8 +94,33 @@ public class IU_Evento {
 	 * @param evento
 	 * @param asistente
 	 */
-	public boolean RegistrarseEvento(Evento evento, Asistente asistente) {
+	public void clickRegistrarseEvento(Evento evento, Asistente asistente) {
+		// TODO - implement IU_Evento.clickRegistrarseEvento
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param evento
+	 * @param asistente
+	 */
+	public void click_solicitar_certificado(Evento evento, Asistente asistente) {
+		// TODO - implement IU_Evento.click_solicitar_certificado
+		throw new UnsupportedOperationException();
+	}
+
+	public static boolean RegistrarseEvento(Evento e, Asistente a) {
 		// TODO - implement IU_Evento.RegistrarseEvento
+		return true; //modo de ejemplo
+	}
+
+	/**
+	 * 
+	 * @param e
+	 * @param a
+	 */
+	public void mostrarCertificado(Evento e, Asistente a) {
+		// TODO - implement IU_Evento.mostrarCertificado
 		throw new UnsupportedOperationException();
 	}
 

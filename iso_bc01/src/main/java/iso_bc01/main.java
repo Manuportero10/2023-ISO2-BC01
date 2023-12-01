@@ -4,7 +4,7 @@ import iso_bc01.Dominio.*;
 import java.util.*;
 
 
-public class Main 
+public class main 
 {
     public static void main( String[] args )
     {
@@ -26,9 +26,11 @@ public class Main
         //implementacion_iteracion5();
         implementacion_iteracion5();
 
-	//implementacion iteracion 6
-	implementacion_iteracion6();
+        //implementacion iteracion 6
+        implementacion_iteracion6();
 
+        //implementacion iteracion 7
+        implementacion_iteracion7();
 
     }
 
@@ -100,7 +102,7 @@ public class Main
         Evento evento = new Evento(0, null, null, null, null);
         Asistente asistente = new Asistente(); //Creamos al asistente con los datos necesarios
         boolean valido = interfaz_eventos.RegistrarseEvento(evento,asistente);
-     
+
         if (valido == true) { //control de errores
             interfaz_eventos.MostrarMensaje("Registrado");
         } else {
@@ -110,26 +112,44 @@ public class Main
     }
 
     public static void implementacion_iteracion6(){
-	Alumno alumno = new Alumno();
-    	IU_AsignarAlumno I_alumno = new IU_AsignarAlumno("a345","1235");
-	boolean esValido = controlAsignar.comprobar_alumno("a354");
-	if (esValido) {
-		controlAsignar.asignar_evento_a_alumno("a345","1235");
-	}
-	else {
-		System.out.println("Alumno no valido");
-	}
-	Profesor profesor = new Profesor();
-	IU_AsignarProfesor I_prof = new IU_AsignarProfesor("p456","1235");
-	esValido = controlAsignar.comprobar_profesor("p456");
-	if (esValido) {
-		controlAsignar.asignar_evento_a_profesor("p456","1235");
-	}
-	else {
-		System.out.println("Profesor no valido");
-	}
+        Alumno alumno = new Alumno();
+        IU_AsignarAlumno I_alumno = new IU_AsignarAlumno("a345","1235");
+        boolean esValido = controlAsignar.comprobar_alumno("a354");
 
+        if (esValido) { //control de errores
+            controlAsignar.asignar_evento_a_alumno("a345","1235");
+        }
+        else {
+            System.out.println("Alumno no valido");
+        }
+        Profesor profesor = new Profesor();
+        IU_AsignarProfesor I_prof = new IU_AsignarProfesor("p456","1235");
+        esValido = controlAsignar.comprobar_profesor("p456");
 
+        if (esValido) {
+            controlAsignar.asignar_evento_a_profesor("p456","1235");
+        }
+        else {
+            System.out.println("Profesor no valido");
+        }
+
+    }
+
+    public static void implementacion_iteracion7(){
+        // implementación de la iteración 7 - Solicitar certificado
+        IU_Evento interfaz_eventos = new IU_Evento();
+        Evento evento = new Evento(0, null, null, null, null);
+        Asistente asistente = new Asistente(); //Creamos al asistente con los datos necesarios
+        boolean valido = interfaz_eventos.RegistrarseEvento(evento,asistente);
+
+        if (valido == true) { //control de errores
+            interfaz_eventos.MostrarMensaje("Registrado");
+        } else {
+            interfaz_eventos.MostrarMensajeError("No registrado - Error");  
+        }
+        interfaz_eventos.click_solicitar_certificado(evento,asistente);
+        interfaz_eventos.MostrarMensaje("Certificado solicitado");
+        interfaz_eventos.mostrarCertificado(evento, asistente); //mostramos el certificado
     }
 
 

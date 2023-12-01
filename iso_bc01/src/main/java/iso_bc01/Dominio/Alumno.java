@@ -1,4 +1,4 @@
-package Diagrama_de_clases.Dominio;
+package iso_bc01.Dominio;
 
 public class Alumno extends Usuario {
 
