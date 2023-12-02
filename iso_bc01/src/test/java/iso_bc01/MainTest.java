@@ -46,4 +46,8 @@ public class MainTest
         // pruebas convenientes a la iteracion 6
     	assertTrue( true );        
     }
+    public void shouldAnswerWithTrue7() {
+        // pruebas convenientes a la iteracion 7
+    	assertTrue( true );
+    }
 }
