@@ -1,5 +1,4 @@
-package iso_bc01.Dominio;
-import java.util.*;
+package Diagrama_de_clases.Dominio;
 
 public class controlEvento {
 
@@ -10,8 +9,8 @@ public class controlEvento {
 	 * @param descripcion
 	 * @param participantes
 	 */
-	public int anadirEvento(String fechs, String nombre, String descripcion, Asistente[] participantes) {
-		// TODO - implement controlEvento.anadirEvento
+	public int añadirEvento(Date fechs, String nombre, String descripcion, Asistente[] participantes) {
+		// TODO - implement controlEvento.añadirEvento
 		throw new UnsupportedOperationException();
 	}
 
@@ -71,14 +70,22 @@ public class controlEvento {
 		throw new UnsupportedOperationException();
 	}
 
-
 	/**
 	 * 
 	 * @param e
 	 * @param a
 	 */
-	public String generar_certificado(Evento e, Asistente a) {
+	public String generar_certificado(Evento e, asistente a) {
 		// TODO - implement controlEvento.generar_certificado
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param id
+	 */
+	public boolean generar_estadisticas(String id) {
+		// TODO - implement controlEvento.generar_estadisticas
 		throw new UnsupportedOperationException();
 	}
 

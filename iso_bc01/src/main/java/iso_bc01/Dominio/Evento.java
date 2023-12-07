@@ -1,9 +1,9 @@
-package iso_bc01.Dominio;
+package Diagrama_de_clases.Dominio;
 
 public class Evento {
 
 	private int id;
-	private String fecha;
+	private Date fecha;
 	private String nombre;
 	private String descripcion;
 	private Asistente[] asistentes;
@@ -17,7 +17,7 @@ public class Evento {
 	 * @param descripcion
 	 * @param asistentes
 	 */
-	public Evento(int id, String fecha, String nombre, String descripcion, Asistente[] asistentes) {
+	public Evento(int id, Date fecha, String nombre, String descripcion, Asistente[] asistentes) {
 		// TODO - implement Evento.Evento
 		throw new UnsupportedOperationException();
 	}
@@ -27,7 +27,7 @@ public class Evento {
 		throw new UnsupportedOperationException();
 	}
 
-	public String getFecha() {
+	public date getFecha() {
 		// TODO - implement Evento.getFecha
 		throw new UnsupportedOperationException();
 	}
@@ -54,7 +54,7 @@ public class Evento {
 	 * 
 	 * @param fecha
 	 */
-	public void setFecha(String fecha) {
+	public void setFecha(Date fecha) {
 		this.fecha = fecha;
 	}
 
@@ -90,6 +90,11 @@ public class Evento {
 	 */
 	public boolean registrarse(Asistente a) {
 		// TODO - implement Evento.registrarse
+		throw new UnsupportedOperationException();
+	}
+
+	public boolean generar_estadisticas() {
+		// TODO - implement Evento.generar_estadisticas
 		throw new UnsupportedOperationException();
 	}
 

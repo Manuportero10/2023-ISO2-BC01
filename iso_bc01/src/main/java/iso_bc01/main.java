@@ -3,6 +3,8 @@ import iso_bc01.Presentacion.*;
 import iso_bc01.Dominio.*;
 import java.util.*;
 
+import Diagrama_de_clases.Presentacion.IU_Estadisticas;
+
 
 public class main 
 {
@@ -31,6 +33,9 @@ public class main
 
         //implementacion iteracion 7
         implementacion_iteracion7();
+
+        //implementacion iteracion 9
+        implementacion_iteracion9();
 
     }
 
@@ -150,6 +155,12 @@ public class main
         interfaz_eventos.click_solicitar_certificado(evento,asistente);
         interfaz_eventos.MostrarMensaje("Certificado solicitado");
         interfaz_eventos.mostrarCertificado(evento, asistente); //mostramos el certificado
+    }
+
+    public static void implementacion_iteracion9() {
+        Evento evento = new Evento(123, null, null, null, null);
+        IU_Estadisticas interfaz_estadisticas = new IU_Estadisticas();
+        interfaz_estadisticas.mostrarEstadisticas(evento.getID());
     }
 
 
