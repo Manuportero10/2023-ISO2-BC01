@@ -50,4 +50,9 @@ public class MainTest
         // pruebas convenientes a la iteracion 7
     	assertTrue( true );
     }
+
+    public void shouldAnswerWithTrue9() {
+        //pruebas convenientes a la iteración 9
+        assertTrue( condition:true);
+    }
 }
