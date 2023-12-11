@@ -10,8 +10,8 @@ public class controlEvento {
 	 * @param descripcion
 	 * @param participantes
 	 */
-	public int añadirEvento(String fechs, String nombre, String descripcion, Asistente[] participantes) {
-		// TODO - implement controlEvento.añadirEvento
+	public int anadirEvento(String fechs, String nombre, String descripcion, Asistente[] participantes) {
+		// TODO - implement controlEvento.a�adirEvento
 		throw new UnsupportedOperationException();
 	}
 
@@ -85,8 +85,37 @@ public class controlEvento {
 	 * 
 	 * @param id
 	 */
-	public boolean generar_estadisticas(int id) {
+	public boolean generar_estadisticas(String id) {
 		// TODO - implement controlEvento.generar_estadisticas
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param e
+	 * @param a
+	 */
+	public String generar_informe_asistente(Evento e, Asistente a) {
+		// TODO - implement controlEvento.generar_informe_asistente
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param e
+	 * @param o
+	 */
+	public String generar_informe_organizador(Evento e, Organizador o) {
+		// TODO - implement controlEvento.generar_informe_organizador
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param e
+	 */
+	public String generar_informe_estadisticas(Evento e) {
+		// TODO - implement controlEvento.generar_informe_estadisticas
 		throw new UnsupportedOperationException();
 	}
 

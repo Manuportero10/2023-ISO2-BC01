@@ -2,6 +2,7 @@ package iso_bc01.Presentacion;
 import iso_bc01.Dominio.*;
 import java.util.*;
 
+
 public class IU_Evento {
 
 	/**
@@ -94,7 +95,7 @@ public class IU_Evento {
 	 * @param evento
 	 * @param asistente
 	 */
-	public void clickRegistrarseEvento(Evento evento, Asistente asistente) {
+	public boolean clickRegistrarseEvento(Evento evento, Asistente asistente) {
 		// TODO - implement IU_Evento.clickRegistrarseEvento
 		throw new UnsupportedOperationException();
 	}
@@ -109,11 +110,6 @@ public class IU_Evento {
 		throw new UnsupportedOperationException();
 	}
 
-	public static boolean RegistrarseEvento(Evento e, Asistente a) {
-		// TODO - implement IU_Evento.RegistrarseEvento
-		return true; //modo de ejemplo
-	}
-
 	/**
 	 * 
 	 * @param e
@@ -121,6 +117,64 @@ public class IU_Evento {
 	 */
 	public void mostrarCertificado(Evento e, Asistente a) {
 		// TODO - implement IU_Evento.mostrarCertificado
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param e
+	 * @param asistente
+	 */
+	public void click_generar_informe_asistente(Evento e, Asistente asistente) {
+		// TODO - implement IU_Evento.click_generar_informe_asistente
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param e
+	 * @param organizador
+	 */
+	public void click_generar_informe_organizadorEvento(Evento e, Organizador organizador) {
+		// TODO - implement IU_Evento.click_generar_informe_organizadorEvento
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param e
+	 */
+	public void click_generar_informe_encuestas(Evento e) {
+		// TODO - implement IU_Evento.click_generar_informe_encuestas
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param e
+	 * @param asistente
+	 */
+	public void mostrarInforme_asistente(Evento e, Asistente asistente) {
+		// TODO - implement IU_Evento.mostrarInforme_asistente
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param e
+	 * @param organizador
+	 */
+	public void mostrarInforme_organizador(Evento e, Organizador organizador) {
+		// TODO - implement IU_Evento.mostrarInforme_organizador
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param e
+	 */
+	public void mostrarInforme_encuestas(Evento e) {
+		// TODO - implement IU_Evento.mostrarInforme_encuestas
 		throw new UnsupportedOperationException();
 	}
 

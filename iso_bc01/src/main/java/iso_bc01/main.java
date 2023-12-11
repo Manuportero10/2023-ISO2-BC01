@@ -34,6 +34,9 @@ public class main
         //implementacion iteracion 9
         implementacion_iteracion9();
 
+        //implementacion iteracion 10
+        implementacion_iteracion10();
+
     }
 
     public static void registrarse(){
@@ -103,7 +106,7 @@ public class main
  
         Evento evento = new Evento(0, null, null, null, null);
         Asistente asistente = new Asistente(); //Creamos al asistente con los datos necesarios
-        boolean valido = interfaz_eventos.RegistrarseEvento(evento,asistente);
+        boolean valido = interfaz_eventos.clickRegistrarseEvento(evento,asistente);
 
         if (valido == true) { //control de errores
             interfaz_eventos.MostrarMensaje("Registrado");
@@ -142,7 +145,7 @@ public class main
         IU_Evento interfaz_eventos = new IU_Evento();
         Evento evento = new Evento(0, null, null, null, null);
         Asistente asistente = new Asistente(); //Creamos al asistente con los datos necesarios
-        boolean valido = interfaz_eventos.RegistrarseEvento(evento,asistente);
+        boolean valido = interfaz_eventos.clickRegistrarseEvento(evento,asistente);
 
         if (valido == true) { //control de errores
             interfaz_eventos.MostrarMensaje("Registrado");
@@ -158,6 +161,33 @@ public class main
         Evento evento = new Evento(123, null, null, null, null);
         IU_Estadisticas interfaz_estadisticas = new IU_Estadisticas();
         interfaz_estadisticas.mostrarEstadisticas(evento.getID());
+    }
+
+    public static void implementacion_iteracion10(){
+        controlEvento control = new controlEvento();
+        IU_Evento interfaz_eventos = new IU_Evento();
+        Evento evento = new Evento(0, null, null, null, null);
+
+        Asistente asistente = new Asistente(); //Creamos al asistente con los datos necesarios
+        boolean valido = interfaz_eventos.clickRegistrarseEvento(evento,asistente);
+        if (valido)
+            System.out.println("Registrado correctamente");
+
+        interfaz_eventos.mostrarInforme_asistente(evento,asistente);
+        String informe =  control.generar_informe_asistente(evento,asistente);
+
+        if (informe != null) {
+            System.out.println("Informe generado correctamente");
+        } else {
+            System.out.println("No se ha podido generar el informe");
+        }
+
+        // Con respecto a los nuevos métodos de la clase IU_Evento, se ha implementado también el método mostrarInforme_organizador
+        // y mostrarInforme_encuestas, la lógica de estos métodos es la misma que la del método mostrarInforme_asistente
+        // pero cambiando los parametros de entrada por los correspondientes a los nuevos métodos.
+
+        // lo mismo pasa con los nuevos evento de la clase controlEvento, se han implementado los métodos generar_informe_organizador
+        // y generar_informe_encuestas, la lógica de estos métodos es la misma que la del método generar_informe_asistente.
     }
 
 
