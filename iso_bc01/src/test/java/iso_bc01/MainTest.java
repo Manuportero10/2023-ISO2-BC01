@@ -55,4 +55,8 @@ public class MainTest
         //pruebas convenientes a la iteración 9
         assertTrue( true ); 
     }
+    public void shouldAnswerWithTrue10() {
+        //pruebas convenientes a la iteración 10
+        assertTrue( true ); 
+    }
 }
