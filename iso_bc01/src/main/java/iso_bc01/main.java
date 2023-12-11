@@ -3,9 +3,6 @@ import iso_bc01.Presentacion.*;
 import iso_bc01.Dominio.*;
 import java.util.*;
 
-import Diagrama_de_clases.Presentacion.IU_Estadisticas;
-
-
 public class main 
 {
     public static void main( String[] args )

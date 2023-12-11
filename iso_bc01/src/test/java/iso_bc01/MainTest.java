@@ -53,6 +53,6 @@ public class MainTest
 
     public void shouldAnswerWithTrue9() {
         //pruebas convenientes a la iteración 9
-        assertTrue( condition:true);
+        assertTrue( true ); 
     }
 }
